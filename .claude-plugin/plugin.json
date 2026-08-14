@@ -1,0 +1,8 @@
+{
+  "name": "sv-iss-plugin",
+  "version": "0.1.0",
+  "description": "Skills internas da SV Advocacia para o fluxo de restituição de ISSQN (atleta/audiovisual), procuração e contrato de honorários, réplica a contestações, atualização jurídica diária e controle financeiro/PLR.",
+  "author": {
+    "name": "SV Advocacia"
+  }
+}
