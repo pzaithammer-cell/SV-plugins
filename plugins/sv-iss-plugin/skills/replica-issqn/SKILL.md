@@ -184,6 +184,15 @@ foram usados e se algum tópico da contestação ficou sem resposta por
 falta de bloco correspondente, para revisão do advogado antes do
 protocolo.
 
+## Onde salvar a minuta (e o que nunca vai para o GitHub)
+
+O `.docx` da réplica sempre vai para a pasta local do caso do cliente, dentro do projeto —
+nunca só entregue na conversa. **Nunca commitar/enviar a minuta ou qualquer documento de
+cliente para o repositório GitHub `SV-plugins`**: esse repositório é só para o código desta
+skill (`SKILL.md`, `references/`), sem dado real de caso. Quando o Pedro tiver uma nuvem
+privada conectada (ex.: OneDrive/Microsoft 365 com escrita habilitada), sincronizar o arquivo
+também para lá, além da pasta local.
+
 ## Observação importante
 Esta skill monta a **minuta**. A peça final deve sempre passar por
 revisão humana antes do protocolo — em especial os valores, datas, fls.,

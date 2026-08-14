@@ -268,6 +268,12 @@ Drive por categoria/ano. Ao acessar essas pastas:
   permite).
 
 ## Salvando entregáveis em pasta do usuário
+
+**Nunca commitar ou enviar entregáveis (planilhas, quadros, PDFs, documentação do cliente) para
+o repositório GitHub `SV-plugins`** — esse repositório é só para o código das skills do
+escritório, sem nenhum dado real de cliente. Entregáveis ficam sempre na pasta local do caso.
+Quando o Pedro tiver uma nuvem privada conectada (ex.: OneDrive/Microsoft 365 com escrita
+habilitada), sincronizar também para lá, além da pasta local — nunca em vez dela.
 Antes de sobrescrever um arquivo de entrega (planilha, quadro) na pasta do caso,
 verificar se ele está aberto no Excel/Word do usuário (erro "Permission denied" no
 `cp`/`rm`, ou presença de um arquivo de lock `~$nome.xlsx` na mesma pasta). Se estiver

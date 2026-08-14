@@ -45,6 +45,14 @@ Isso importa porque o array `DEFAULT_COLABORADORES` no código só é usado como
 - Ao ler cartões (`trelloReadCard`, `action: "list_by_board"`), a resposta real observada é `{"cards":{"nodes":[...], "pageInfo":{"hasNextPage":bool,"endCursor":str}}}` — não a forma agrupada por lista que a descrição da ferramenta sugere.
 - Ao criar lista (`trelloWriteList`, `action: "create"`), a resposta é achatada: `{"listId":..., "name":..., "boardId":..., "position":...}` (diferente da forma de card, que é `{"cards":{"nodes":[...]}}`).
 
+## Onde fica o que (e o que nunca vai para o GitHub)
+
+O código deste artefato (a versão publicada via `update_artifact`) é o que sincroniza com o
+repositório GitHub `SV-plugins`, junto com o `SKILL.md`. **Dados financeiros/pessoais nunca vão
+para esse repositório**: comprovantes, envolvimento por processo, salários e configuração do
+rateio ficam só no `window.storage` do navegador do usuário (não são arquivos, não saem daí) e
+os lançamentos ficam só no Trello — nenhum dos dois é commitado em lugar nenhum.
+
 ## Convenção de nome dos cartões (lançamentos)
 
 Texto livre, mas majoritariamente: `Cliente - [Tipo/observação -] R$ Valor [(parcela X/Y)] [- Ficha NNN]`. A ordem de "Ficha" e "R$" pode inverter em alguns cartões antigos. Exemplos reais: `"Reinaldo - Criminal - R$ 1.500,00"`, `"Austin - R$ 1.750,00 - Ficha 31758"`, `"LCT - FICHA 10576 - R$ 29.536,00"`, `"Max Alves - R$ 5.000,00 (parcela 1/4) - Ficha 32943.01"`. Alguns cartões não têm valor nenhum (ex: `"Welt Sports"`, `"ALC"`) — trate como "sem valor" na UI, nunca invente um número. A função `parseCardName` no artefato já implementa esse parser; se for alterar a lógica de nomes, mexa ali (é best-effort, não tente deixar 100% robusto para todo caso possível).

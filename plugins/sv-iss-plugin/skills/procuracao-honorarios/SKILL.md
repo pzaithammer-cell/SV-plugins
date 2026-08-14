@@ -103,6 +103,16 @@ aprovado pelo usuário, também gera o PDF final e sobe para assinatura no ZapSi
    defina signatários nem envie para assinatura sem confirmar com o usuário o(s) destinatário(s)
    corretos — a skill só cobre a preparação e o upload do documento, não decide quem assina.
 
+## Onde salvar os arquivos gerados (e o que nunca vai para o GitHub)
+
+Os documentos finais desta skill (procuração, contrato, declaração de hipossuficiência, PDFs)
+ficam sempre na pasta local do caso do cliente, dentro do projeto — nunca só na conversa.
+**Nunca commitar ou enviar esses arquivos para o repositório GitHub `SV-plugins`**: esse
+repositório é só para o código desta skill (`SKILL.md`, `scripts/`, `assets/templates/` com
+tokens vazios), sem nenhum dado real de cliente. Quando o Pedro tiver uma nuvem privada
+conectada (ex.: OneDrive/Microsoft 365 com escrita habilitada), sincronizar os arquivos também
+para lá, além da pasta local — nunca em vez da pasta local.
+
 ## Estrutura desta skill
 
 ```
