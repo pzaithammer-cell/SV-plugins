@@ -1,0 +1,14 @@
+{
+  "name": "sv-plugins",
+  "owner": {
+    "name": "SV Advocacia"
+  },
+  "description": "Marketplace privado com os plugins de Claude da SV Advocacia.",
+  "plugins": [
+    {
+      "name": "sv-iss-plugin",
+      "source": "./plugins/sv-iss-plugin",
+      "description": "Skills internas da SV Advocacia para o fluxo de restituição de ISSQN (atleta/audiovisual), procuração e contrato de honorários, réplica a contestações, atualização jurídica diária e controle financeiro/PLR."
+    }
+  ]
+}
